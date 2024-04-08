@@ -4,20 +4,20 @@ phrase = input()
 
 print("You entered: " + phrase)
 
-alphabet = "abcdefghijklmnopqrstuvwxyzabcde"
+alphabet = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
 newPhrase = " "
 
-
-
-
-for i in range(0, len(phrase)):
-    try:
-        char = phrase[i]
-        newChar = str(alphabet[alphabet.index(char)+5])
+for char in phrase:
+    if char.islower():  
+        newChar = alphabet[(alphabet.index(char) + 5) % 26] 
         newPhrase += newChar
-    except:
-        newChar = str(alphabet[0])
+    elif char.isupper():  
+        newChar = alphabet[(alphabet.index(char) + 5) % 52 + 26]  
         newPhrase += newChar
+    else:
+        newPhrase += char 
+
+
+
 
 print("The Cipher Phrase is" + newPhrase)
-
