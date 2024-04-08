@@ -1,6 +1,5 @@
 
-print("Input phrase: ")
-phrase = ''
+phrase = input("Input phrase: ")
 
 print("You entered: " + phrase)
 
