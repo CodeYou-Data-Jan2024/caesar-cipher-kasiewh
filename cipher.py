@@ -19,4 +19,4 @@ for char in phrase:
 
 
 
-print("The encrypted sentence is" + newPhrase)
+print("The encrypted sentence is: " + newPhrase)
