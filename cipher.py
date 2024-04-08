@@ -1,6 +1,6 @@
 
 print("Input phrase: ")
-phrase = ' '
+phrase = ''
 
 print("You entered: " + phrase)
 
