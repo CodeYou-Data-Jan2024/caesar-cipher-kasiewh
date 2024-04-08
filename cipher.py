@@ -1,23 +1,22 @@
 
 print("Input phrase: ")
-phrase = ''
+phrase = ' '
 
 print("You entered: " + phrase)
 
-alphabet = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
-newPhrase = " "
+alphabet = "abcdefghijklmnopqrstuvwxyz"
+newPhrase = ' '
+
+phrase = phrase.lower()
 
 for char in phrase:
-    if char.islower():  
-        newChar = alphabet[(alphabet.index(char) + 5) % 26] 
-        newPhrase += newChar
-    elif char.isupper():  
-        newChar = alphabet[(alphabet.index(char) + 5) % 52 + 26]  
+    if char in alphabet:
+        newChar = alphabet[(alphabet.index(char) + 5) % 26]
         newPhrase += newChar
     else:
-        newPhrase += char 
+        newPhrase += char
 
 
 
 
-print("The Cipher Phrase is" + newPhrase)
+print("The encrypted sentence is" + newPhrase)
