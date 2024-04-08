@@ -1,4 +1,3 @@
-
 phrase = input("Input phrase: ")
 
 print("You entered: " + phrase)
@@ -14,8 +13,5 @@ for char in phrase:
         newPhrase += newChar
     else:
         newPhrase += char
-
-
-
 
 print("The encrypted sentence is: " + newPhrase)
