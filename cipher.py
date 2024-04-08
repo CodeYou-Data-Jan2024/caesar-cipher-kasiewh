@@ -1,11 +1,11 @@
 
 print("Input phrase: ")
-phrase = ' '
+phrase = ''
 
 print("You entered: " + phrase)
 
 alphabet = "abcdefghijklmnopqrstuvwxyz"
-newPhrase = ' '
+newPhrase = ''
 
 phrase = phrase.lower()
 
